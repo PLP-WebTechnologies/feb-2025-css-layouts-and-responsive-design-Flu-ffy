@@ -1,0 +1,141 @@
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Navigation bar */
+nav{
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+
+  nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+
+
+/* Main content */
+.content{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    display: grid;
+    align-items:normal;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+#home{
+    background-color: #1e1616;
+    padding: 20px;
+    margin: 20px 0;
+}
+#about{
+    background-color: #1e1616;
+    padding: 20px;
+    margin: 20px 0;
+}
+#contact{
+    background-color: #1e1616;
+    padding: 20px;
+    margin: 20px 0;
+}
+#services{
+    background-color: #1e1616;
+    padding: 20px;
+    margin: 20px 0;
+}
+#portfolio{
+    background-color: #1e1616;
+    padding: 20px;
+    margin: 20px 0;
+}
+#testimonials{
+    background-color: #1e1616;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+/* Footer */
+footer{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Queries */
+/* Phones: up to 600px */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets: 601px to 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptops: 901px to 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktops: 1201px and up */
+@media (min-width: 1201px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
